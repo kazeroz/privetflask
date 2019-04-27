@@ -3,18 +3,20 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def hello_world():
-    return 'ZDAROVA DENIS!!!! '
-chars = "s"
-check_string ="saaassd"
+    return '<html>
+<head>
+<script type="text/javascript">
+    var text = document.getElementsByTagName("input")[0];
+    var val=text.innerHTML;
+    alert(val)
+</script>
+</head>
+<body>
+<form action="#"><input type="text" value="Some text here..." />
+<input type="submit" />
+</form>
+</body>
+</html>'
 
-count= {}
-for s in check_string:
-    if count.has_key(s):
-        count[s]+=1
-        else:
-            count[s]=1:
-            for key in count :
-                if count[key] >1:
-                    print key, count[key]:
 if __name__ == '__main__':
  app.run(host='0.0.0.0', debug=True)

@@ -4,14 +4,11 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def hello_world():
     return 'ZDAROVA DENIS!!!! '
-cont= {}
-for s in check_string:
-    if count.has_key(s):
-        count[s]+=1
-        else:
-            count[s]=1
-            for key in count :
-                if count[key] >1:
-                    print key, count[key]
+chars = "s"
+check_string ="saaassd"
+for cher in chars:
+    count = check_string.count(char)
+    if count > 1:
+        print chart, count
 if __name__ == '__main__':
  app.run(host='0.0.0.0', debug=True)
